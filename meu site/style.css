@@ -1,0 +1,88 @@
+/* Reset de margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilizando o body */
+body {
+    background-image: url('gif/GIF.gif');
+    background-size: cover; /* Faz o fundo cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem de fundo */
+}
+
+/* Estilizando o header */
+header {
+    padding: 10px;
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+.logo {
+    font-size: 36px;
+    color: #00FF00; /* Cor verde */
+    margin: 0; /* Remove margem padrão */
+    padding: 20px; /* Adiciona espaço ao redor do logotipo */
+    animation: blink 2s infinite alternate; /* Adiciona uma animação de piscar */
+}
+
+/* Estilizando a lista de links */
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    position: relative; /* Adiciona posição relativa */
+    display: inline-block; /* Faz com que os elementos da lista fiquem lado a lado */
+    margin-right: 30px; /* Espaçamento entre os itens */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FF0000; /* Cor vermelha forte */
+    font-weight: bold;
+    display: block; /* Para que o link preencha todo o espaço disponível */
+    padding: 15px; /* Espaçamento interno do link */
+    font-size: 18px; /* Tamanho da fonte aumentado */
+    background-color: #00FF00; /* Cor de fundo verde */
+    border: 2px solid #00FF00; /* Adiciona borda verde */
+}
+
+.submenu {
+    display: none;
+    position: absolute; /* Posicionamento absoluto */
+    top: 100%; /* Aparece abaixo do item pai */
+    left: 0; /* Alinha com o lado esquerdo do item pai */
+    background-color: #333; /* Cor de fundo do submenu */
+    padding: 15px; /* Espaçamento interno do submenu */
+    white-space: nowrap; /* Evita que o texto quebre em várias linhas */
+}
+
+.submenu.active {
+    display: block;
+}
+
+.submenu li {
+    display: block; /* Mostrar itens verticalmente */
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Regras de mídia para dispositivos menores */
+@media only screen and (max-width: 768px) {
+    .logo {
+        font-size: 24px; /* Reduz o tamanho do logotipo para telas menores */
+    }
+    
+    nav ul li a {
+        font-size: 16px; /* Reduz o tamanho dos links para telas menores */
+        padding: 10px; /* Reduz o espaço interno dos links para telas menores */
+    }
+}

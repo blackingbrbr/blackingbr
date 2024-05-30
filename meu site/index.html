@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLACINK</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> <!-- Inclua o arquivo JavaScript -->
+</head>
+<body>
+    <header>
+        <h1 class="logo">BLACINK</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" onclick="toggleSubMenu(event, 'projetosSubMenu')">PROJETOS WEB</a>
+                    <ul id="projetosSubMenu" class="submenu" onclick="event.stopPropagation()">
+                        <li><a href="sistema de bater ponto/index_sistema.html">SISTEMA DE BATER PONTO</a></li>
+                        <!-- Adicione mais subpastas aqui -->
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu(event, 'automatizacaoSubMenu')">AUTOMATIZAÇÃO SCRIPTS</a>
+                    <ul id="automatizacaoSubMenu" class="submenu" onclick="event.stopPropagation()">
+                        <!-- Adicione mais subpastas aqui -->
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu(event, 'bruteForceSubMenu')">BRUTE FORCE</a>
+                    <ul id="bruteForceSubMenu" class="submenu" onclick="event.stopPropagation()">
+                        <!-- Adicione mais subpastas aqui -->
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Conteúdo principal do seu site aqui -->
+    </main>
+
+    <footer>
+        <!-- Rodapé do seu site aqui -->
+    </footer>
+</body>
+</html>
